@@ -1,3 +1,5 @@
+require 'mimi/core'
+
 module Mimi
 end
 
