@@ -1,4 +1,3 @@
-require 'mimi/core'
 require 'mimi/logger'
 require 'mimi/config'
 require 'singleton'
