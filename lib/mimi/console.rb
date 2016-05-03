@@ -43,6 +43,12 @@ module Mimi
         esc_color 34, text
       end
 
+      #
+      #
+      def esc_gray(text)
+        esc_color '30;1', text
+      end
+
       # Returns ANSI escaped string for the bold text.
       #
       def esc_bold(text)
@@ -95,6 +101,15 @@ module Mimi
           end.join(params[:delimiter])
         end.join("\n")
       end
+
+      # Color output disabled
+      #
+      module Disabled
+        def esc_string(_, text)
+          text
+        end
+      end # module Disabled
+
     end # module Colors
   end # module Console
 end # module Mimi

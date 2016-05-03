@@ -1,5 +1,7 @@
 require 'mimi/console'
+
 extend Mimi::Console::Colors
+extend Mimi::Console::Colors::Disabled unless STDOUT.isatty
 
 #
 # Include this task as dependency to require application instantiation
@@ -7,6 +9,9 @@ extend Mimi::Console::Colors
 task :application do
   @application_runner = Mimi::Application.runner
   @application = @application_runner.application_instance
+  define_method :logger do
+    @application.logger
+  end
 end
 
 namespace :application do
