@@ -1,2 +1,3 @@
 require 'bundler/setup'
+require_relative 'lib/<%= file_name %>'
 require 'mimi/core/rake'
