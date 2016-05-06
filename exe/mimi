@@ -1,0 +1,4 @@
+#!/usr/bin/env ruby
+require 'mimi/cli'
+
+Mimi::CLI.start(ARGV)

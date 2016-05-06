@@ -1,0 +1,8 @@
+source 'https://rubygems.org'
+
+gem 'mimi', '~> 0.1'
+
+# Uncomment these lines to use mimi-db or mimi-messaging:
+#
+# gem 'mimi/db', '~> 0.1'
+# gem 'mimi/messaging', '~> 0.1'
