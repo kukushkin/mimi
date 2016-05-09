@@ -1,6 +1,6 @@
 #!/usr/bin/env ruby
 
 require 'bundler/setup'
-require '<%= file_name %>'
+require_relative '../lib/<%= file_name %>'
 
 Mimi::Application.run

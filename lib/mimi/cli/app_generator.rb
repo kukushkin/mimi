@@ -14,10 +14,17 @@ module Mimi
         'lib/file_name/application.rb' => 'lib/#{file_name}/application.rb',
         'lib/file_name/version.rb' => 'lib/#{file_name}/version.rb',
         'lib/boot.rb' => 'lib/boot.rb',
+        'spec/fixtures/' => 'spec/fixtures/',
+        'spec/lib/app_name_spec.rb' => 'spec/lib/#{app_name}_spec.rb',
+        'spec/lib/app_name/' => 'spec/lib/#{app_name}/',
+        'spec/support/envvars.rb' => 'spec/support/envvars.rb',
+        'spec/support/fixtures.rb' => 'spec/support/fixtures.rb',
+        'spec/spec_helper.rb' => 'spec/spec_helper.rb',
         'Gemfile' => 'Gemfile',
         'Rakefile' => 'Rakefile',
         'app.env' => '.env',
-        'app.gitignore' => '.gitignore'
+        'app.gitignore' => '.gitignore',
+        'app.rspec' => '.rspec'
       }
       FILE_MAPPINGS_EXEC = ['bin/start']
 

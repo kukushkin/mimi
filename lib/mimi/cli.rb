@@ -27,4 +27,5 @@ module Mimi
   end # class CLI
 end # module Mimi
 
+require_relative './version'
 require_relative 'cli/app_generator'
