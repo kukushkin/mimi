@@ -4,8 +4,14 @@ gem 'mimi', '~> <%= Mimi::VERSION.sub(/\.\d+$/,'') %>'
 
 # Uncomment these lines to use mimi-db or mimi-messaging:
 #
-# gem 'mimi/db', '~> 0.1'
-# gem 'mimi/messaging', '~> 0.1'
+# gem 'mimi-db', '~> 0.1'
+# gem 'mimi-messaging', '~> 0.1'
+#
+# Uncomment appropriate db adapter gem, if using mimi-db:
+# gem 'mysql2', '~> 0.4'
+# gem 'pg', '~> 0.18'
+# gem 'sqlite3', '~> 1.3'
+#
 
 group :development do
   gem 'rake', '~> 10.5'
