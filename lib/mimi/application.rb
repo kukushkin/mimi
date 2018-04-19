@@ -24,7 +24,7 @@ module Mimi
     configure do
       config # read config or fail
       logger.level = config.log_level if config.include?(:log_level)
-      logger.debug "Configuring the application: #{config.params}"
+      logger.debug 'Configuring the application', config: config.to_h
       # TODO: application-wide configuration
     end
 
